@@ -1,0 +1,63 @@
+:root {
+    --max-width: 450px;
+}
+
+#contacto {
+    text-align: center;
+    width: 100%;
+}
+
+#contacto form {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+#contacto form > section:not(:last-child) {
+    display: grid;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#contacto form > section:last-child {
+    text-align: left;
+}
+
+#contacto button {
+    background: transparent;
+    padding: 10px 12px;
+    border: 2px solid var(--color-second);
+    color: var(--color-second);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    background: var(--color-second);
+    color: var(--color-fg);
+}
+
+#contactos {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+#contactos > div {
+    margin-bottom: 5px;
+}
+
+#contactos a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#contactos img {
+    width: 40px;
+}

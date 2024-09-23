@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Portifollio - Albino Ndjonale</title>
+</head>
+<body>
+    <div id = "app">
+        <header id = "header">
+            <div class = "container">
+                <div>
+                    <div>
+                        <h1>Portifollio</h1>
+
+                        <div>
+                            <nav id = "menu-desktop">
+                                <ul>
+                                    <li><a id = "home-link" onclick = "renderpage('home')">Início</a></li>
+                                    <li><a id = "about-link" onclick = "renderpage('about')">Sobre</a></li>
+                                    <li><a id = "hability-link" onclick = "renderpage('hability')">Habilidades</a></li>
+                                    <li><a id = "project-link" onclick = "renderpage('project')">Projectos</a></li>
+                                    <li><a id = "contacto-link" onclick = "renderpage('contacto')">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <button id = "expand" onclick = "expand()"></button>
+                    </div>
+
+                    <div>
+                        <nav id = "menu-mobile">
+                            <ul>
+                                <li><a onclick = "renderpage('home')">Início</a></li>
+                                <li><a onclick = "renderpage('about')">Sobre</a></li>
+                                <li><a onclick = "renderpage('hability')">Habilidades</a></li>
+                                <li><a onclick = "renderpage('project')">Projectos</a></li>
+                                <li><a onclick = "renderpage('contacto')">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id = "main">
+            <section id = "home">
+                <div id = "content" class = "out-to-left">
+                    <span id = "meet-me">Olá! Sou Albino Ndjonale Desenvolvedor Fullstack e Desktop</span>
+
+                    <p class = "al-justify">
+                        Desenvolvedor web full-stack e desktop,
+                        com experiencia em desenvolvimento de
+                        aplicaçõse escalaveis e com alta perfomance,
+                        apoixonado por tecnologia de modo geral e gosto
+                        de criar apps que ofercem realmente beneficios
+                        ao usuários.
+                    </p>
+
+                    <div class = "cv">
+                        <a href = "img/curriculum.pdf" download>
+                            <button>Baixar CV</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div id = "prophile" class = "out-to-right">
+                        <img src = "./img/prophile.png" alt = "imagem de perfil">
+                    </div>
+                </div>
+            </section>
+
+            <section id = "about">
+                <h2 class = "out-to-top mb">Sobre Mim</h2>
+
+                <p class = "out-to-bottom">
+                    Olá! Meu nome é Albino Ndjonale.
+                    Sou um desenvolvedor apaixonado por tecnologia e inovação.
+                    Ao longo dos anos, mergulhei profundamente no mundo
+                    do desenvolvimento de software,
+                    com experiência em diversas linguagens
+                    e frameworks, como Python, Rust, PHP e JavaScript.
+                </p>
+
+                <p class = "out-to-bottom">
+                    Gosto de criar soluções eficientes e
+                    visualmente atrativas, sempre buscando
+                    aplicar as melhores práticas e padrões de
+                    desenvolvimento.
+                </p>
+            </section>
+
+            <section id = "hability">
+                <h2 class = "out-to-left mb-m">Habilidades</h2>
+
+                <div id = "tecs" class = "out-to-right mb">
+                    <img class = "icon" src = "img/vue.svg" alt = "icon do vue">
+                    <img class = "icon" src = "img/python.svg" alt = "icon do python">
+                    <img class = "icon" src = "img/django.svg" alt = "icon do django">
+                    <img class = "icon" src = "img/fastapi.svg" alt = "icon do fastapi">
+                    <img class = "icon" src = "img/flask.svg" alt = "icon do flask">
+                    <img class = "icon" src = "img/c-plusplus.svg" alt = "icon do c++">
+                    <img class = "icon" src = "img/rust.svg" alt = "icon do rust">
+                    <img class = "icon" src = "img/php.svg" alt = "icon do php">
+                    <img class = "icon" src = "img/laravel.svg" alt = "icon do laravel">
+                    <img class = "icon" src = "img/node.svg" alt = "icon do node">
+                    <img class = "icon" src = "img/git.svg" alt = "icon do git">
+                    <img class = "icon" src = "img/docker.svg" alt = "icon do docker">
+                    <img class = "icon" src = "img/postgresql.svg" alt = "icon do postgresql">
+                    <img class = "icon" src = "img/mysql.svg" alt = "icon do mysql">
+                    <img class = "icon" src = "img/mongo.svg" alt = "icon do mongodb">
+                </div>
+
+                <p class = "out-to-left">
+                    A cima esta a minha pilha de tecnologias
+                    que uso para desenvolver meus projetos.
+                    desde tecnologias para desenvolvimento web, desktop
+                    versionamento de projeto, gestor de base de dados
+                    relacionais e não relacionais.
+                </p>
+            </section>
+
+            <section id = "project">
+                <h2 class = "out-to-top mb">Projectos</h2>
+
+                <div id = "projects">
+                    <div class = "out-to-left project">
+                        <img src = "img/projectmanager.png" alt = "imagem do projeto">
+                        <div>
+                            <h3>Gestor de Projetos</h3>
+
+                            <p>
+                                Gestor de projecto é um app web
+                                desenvolvido com Python e FastApi
+                                com o objetivo de ajudar na gestão dos
+                                projetos.
+                            </p>
+
+                            <em><small>GitHub: <a href="https://github.com/AlbinoNdjonale/project_manager" target="_blank" rel="noopener noreferrer">https://github.com/AlbinoNdjonale/project_manager</a></small></em>
+                            <em><small>Link: <a href="https://projectmanager1-hrkdttv5.b4a.run/" target="_blank" rel="noopener noreferrer">https://projectmanager1-hrkdttv5.b4a.run</a></small></em>
+                        </div>
+                    </div>
+
+                    <div class = "out-to-right project">
+                        <div>
+                            <h3>SGV</h3>
+                            
+                            <p>
+                                App Desktop feito com Python e PyQt6
+                                para gestão de vendas.
+                            </p>
+                            
+                            <em><small>GitHub: <a href="https://github.com/AlbinoNdjonale/sgv" target="_blank" rel="noopener noreferrer">https://github.com/AlbinoNdjonale/sgv</a></small></em>
+                        </div>
+                        <img src = "img/salemanager.png" alt = "imagem do projeto">
+                    </div>
+                </div>
+            </section>
+
+            <section id = "contacto">
+                <h2 class = "out-to-top mb">Contacto</h2>
+
+                <form action = 'https://formspree.io/f/myzgqnjq' method = 'post'>
+                    <section class = "out-to-left">
+                        <label for = "name">Nome</label>
+                        <input type = "text" name = "name" id = "name" required>
+                    </section>
+
+                    <section class = "out-to-right">
+                        <label for = "email">Email</label>
+                        <input type = "email" name = "email" id = "email" required>
+                    </section>
+
+                    <section class = "out-to-left">
+                        <label for = "message">Mensagem</label>
+                        <textarea cols = "1" rows = "6" name = "message" id = "message" required></textarea>
+                    </section>
+
+                    <section class = "out-to-right">
+                        <button>Enviar</button>
+                    </section>
+                </form>
+
+                <section class = "out-to-bottom" id = "contactos">
+                    <div>
+                        <a href = "https://github.com/AlbinoNdjonale" target="_blank" rel="noopener noreferrer">
+                            <img src = "img/github.svg" alt = "imagem do GitHub">
+                        </a>
+    
+                        <a href="www.linkedin.com/in/albino-ndjonale-jovani-ab1450289" target="_blank" rel="noopener noreferrer">
+                            <img src = "img/messenger.svg" alt = "imagem do Messenger">
+                        </a>
+    
+                        <a href="www.linkedin.com/in/albino-ndjonale-jovani-ab1450289" target="_blank" rel="noopener noreferrer">
+                            <img src = "img/linkedin.svg" alt = "imagem do Linkedin">
+                        </a>
+    
+                        <a href="https://wa.me/244930826392" target="_blank" rel="noopener noreferrer">
+                            <img src = "img/whatsapp.svg" alt = "imagem do Whatsapp">
+                        </a>
+                    </div>
+                    <em>email: albinondjonale1@gmail.com</em>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src = "js/app.js"></script>
+</body>
+</html>

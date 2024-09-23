@@ -1,0 +1,60 @@
+:root {
+    --color-main: #222;
+    --color-second: #6703c5;
+    --color-second-df: rgba(103, 3, 197, .5);
+    --color-fg: #eee;
+}
+
+p {
+    font-size: 18px;
+}
+
+.al-justify {
+    text-align: justify;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb-m {
+    margin-bottom: 60px;
+}
+
+.out-to-top {
+    transform: translateY(-200vw);
+    transition: 1s;
+}
+
+.out-to-bottom {
+    transform: translateY(200vw);
+    transition: 1s;
+}
+
+.out-to-right {
+    transform: translateX(200vw);
+    transition: 1s;
+}
+
+.out-to-left {
+    transform: translateX(-200vw);
+    transition: 1s;
+}
+
+.in {
+    transform: translateX(0);
+    transform: translateY(0);
+    transition: 1s;
+}
+
+.icon {
+    width: 70px;
+}
+
+button {
+    transition: 1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

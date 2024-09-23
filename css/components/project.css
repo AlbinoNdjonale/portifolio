@@ -1,0 +1,49 @@
+#project {
+    width: 100%;
+    text-align: center;
+}
+
+    .project {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        justify-content: center;
+        align-items: start;
+    }
+
+        .project img {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .project > div {
+            flex: 1;
+            padding: 10px;
+            text-align: left;
+            display: grid;
+            row-gap: 10px;
+        }
+
+        .project > div > p {
+            max-width: 600px;
+        }
+
+@media screen and (max-width: 709px) {
+    .project {
+        align-items: normal;
+    }
+
+    .project img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .project div {
+        text-align: center;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+}
